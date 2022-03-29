@@ -1,0 +1,22 @@
+{
+  "CONTRACT_ADDRESS": "0x82e51426Afdf2A65987C40E5aC1722083005Ad9C",
+  "SCAN_LINK": "https://etherscan.io/address/0xbdca7f7265f55abcc5c62a46c2a9f939f60ca544",
+  "NETWORK": {
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 4
+  },
+  "NETWORK_ID_WALLET": 1,
+  "NFT_NAME": "MetaverseTimeWarriors NFT",
+  "SYMBOL": "TB",
+  "MAX_SUPPLY": 8888 ,
+  "WEI_COST_WL": 50000000000000000,
+  "DISPLAY_COST_WL": 0.05,
+  "WEI_COST_PU": 70000000000000000,
+  "DISPLAY_COST_PU": 0.07,   
+  "MAX_LIMIT": 10,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/mutant-age-camel-club",
+  "SHOW_BACKGROUND": true
+}
