@@ -86,6 +86,11 @@ function Home() {
     }
 
     setMintAmount(newMintAmount);
+    if(state == 1){
+        setDisplayCost(parseFloat(CONFIG.DISPLAY_COST_WL * newMintAmount).toFixed(3));
+    }else{
+        setDisplayCost(parseFloat(CONFIG.DISPLAY_COST_PU * newMintAmount).toFixed(3));
+    }
   };
 
   const incrementMintAmount = () => {
@@ -94,6 +99,11 @@ function Home() {
       newMintAmount = 10;
     }
     setMintAmount(newMintAmount);
+    if(state == 1){
+      setDisplayCost(parseFloat(CONFIG.DISPLAY_COST_WL * newMintAmount).toFixed(3));
+  }else{
+      setDisplayCost(parseFloat(CONFIG.DISPLAY_COST_PU * newMintAmount).toFixed(3));
+  }
   };
 
   const maxNfts = () => {

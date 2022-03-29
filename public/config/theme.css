@@ -15,15 +15,6 @@ body{
   background-position: center ;
 }
 
-
-
-  #myVideo{
-    display: none;
-  }
-}
-
-
-
 .flexContainer{
   display:flex;
   align-items:center;
