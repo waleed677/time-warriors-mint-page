@@ -172,11 +172,12 @@ function Home() {
       <s.Body>
         <Navbar />
         <s.FlexContainer
-          jc={"space-evenly"}
+          jc={"space-between"}
           ai={"center"}
           fd={"row"}
           mt={"25vh"}
         >
+          <s.Image src={"config/images/1.png"} wid={"25"} />
           <s.Mint>
             <s.TextTitle size={6.0} style={{ letterSpacing: "3px" }}>
               MINT NOW
@@ -326,6 +327,7 @@ function Home() {
             )}
             <Social />
           </s.Mint>
+          <s.Image src={"config/images/2.png"} wid={"25"} />
         </s.FlexContainer>
         <s.SpacerLarge />
       </s.Body>
