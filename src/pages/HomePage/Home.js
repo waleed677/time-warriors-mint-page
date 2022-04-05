@@ -45,6 +45,13 @@ function Home() {
 
   const claimNFTs = () => {
     let cost = 0;
+    if (state == 1) {
+      cost = CONFIG.WEI_COST_WL;
+    } else if (state == 2) {
+      cost = CONFIG.WEI_COST_PU;
+    }else{
+      cost = 0;
+    }
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
     let totalGasLimit = String(gasLimit * mintAmount);
@@ -107,7 +114,11 @@ function Home() {
   };
 
   const maxNfts = () => {
-    if (state == 1) {
+    if(state == 0 ){
+      setMintAmount(0);
+      setDisplayCost(0.00);
+    }
+    else if (state == 1) {
       setMintAmount(CONFIG.MAX_LIMIT);
       setDisplayCost(
         parseFloat(CONFIG.DISPLAY_COST_WL * CONFIG.MAX_LIMIT).toFixed(3)
