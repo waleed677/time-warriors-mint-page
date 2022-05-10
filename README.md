@@ -1,6 +1,6 @@
 # Metaverse Secret NFT's Mint Page
 
-![](https://raw.githubusercontent.com/waleed677/Joking-Jungle-Cats-Mint-Page/master/public/config/images/banner.jpeg)
+![](https://raw.githubusercontent.com/waleed677/time-warriors-mint-page/tree/master/public/config/images/banner.png)
 
 ## Website Link
 
