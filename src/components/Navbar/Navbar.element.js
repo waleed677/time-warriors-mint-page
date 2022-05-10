@@ -38,16 +38,15 @@ export const NavContainer= styled.div`
 
 
 export const NavLogo = styled.img`
-  width: 180px;
+  width: 140px;
   display: flex;
   align-items: center;
-  margin-left: 24px;
-  margin-top  : 20px;
+  margin: 0 auto;
   justify-self:flex-start;
   padding-bottom:2vh;
   @media (min-width: 767px) {
     width: 240px;
-    margin-top  : 70px;
+    margin-top  : 10vh;
   }`;
 
   

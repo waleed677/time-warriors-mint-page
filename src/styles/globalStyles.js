@@ -128,29 +128,28 @@ column-gap:${({ gap }) => (gap ? gap + "%" : "20%")};
 }`;
 
 export const Mint = styled.div`
-  padding:40px 80px;
+  padding: 25px 40px;
+  border-radius: 25px;
+  width: 30%;
   background-color: rgba(0, 0, 0, 0.8);
-  // border:1px solid #4b4b4b;
-  border-radius:25px;
-  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+    margin-top: 25vh;
+  }
   @media screen and (max-width: 768px) {
-    width:95%;
-    margin-top:-5vh;
+    width: 95%;
+    margin-top: 20vh;
+  }
+  @media screen and (max-width: 480px) {
+    width: 95%;
+   margin: 0 auto;
+    padding: 20px 20px;
   }
 
 `;
 
-export const CatDiv = styled.div`
-  display:block;
-  width:45%;
-
-  @media screen and (max-width: 768px) {
-    width:100%;
-    margin-top:10px !important;
-  }
-
-`;
 
 export const Image = styled.img`
   width: ${({ wid }) => (wid ? wid + "%" : "100%")};
@@ -162,6 +161,7 @@ export const Image = styled.img`
   @media (max-width: 767px) {
     width: 100%;
     margin-top:0;
+    display:none;
 
   }
 `;
@@ -182,38 +182,35 @@ export const FlexContainer = styled.div`
 
 export const FlexItem = styled.div`
   flex:${({ flex }) => (flex ? flex : 0)};
-padding:10px ;
+  padding:10px ;
 `;
 
 export const connectButton = styled.button`
-  width:100%;
-  padding:10px;
+  width: 100%;
+  padding: 10px;
   background-color: transparent;
   color: var(--primary);
-  font-family: 'wonder';
-  text-align:center;
-  font-size:1.5rem;
-  border:1px solid var(--primary);
-  border-radius:10px;
+  font-family: "wonder";
+  text-align: center;
+  font-size: 1.5rem;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
   cursor: pointer;
 `;
 
 export const maxButton = styled.button`
-  width:30%;
-  background : var(--primary);
-  height:50px;
-  border-radius:10px;
-  font-family: 'wonder';
-  font-size:1.5rem;
-  color: var(--primary-text) !important ;
-
+  width: 20%;
+  background: #C76D15;
+  height: 50px;
+  border-radius: 10px;
+  font-family: "wonder";
+  font-size: 1.5rem;
+  color: #fff !important ;
   @media screen and (max-width: 768px) {
     position: relative;
     margin-left: auto;
     margin-bottom: 10px;
   }
-
-
 `;
 
 
@@ -248,4 +245,25 @@ cursor: pointer;
 export const NavLink = styled(LinkS)`
 
 cursor: pointer;
+`;
+
+export const StyledRoundButton = styled.button`
+  padding: 10px;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--primary);
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:transparent;
+  :active {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
 `;
