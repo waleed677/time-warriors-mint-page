@@ -1,13 +1,13 @@
-# Metaverse Secret NFT's Mint Page
+# Time Warriors NFT's Smart Contract + Mint Page
 
 ![](https://raw.githubusercontent.com/waleed677/time-warriors-mint-page/master/public/config/images/banner.png)
 
 ## Website Link
 
-https://mint.metaversessecret.com/
+
 
 # From Fleek Access
-https://delicate-silence-7993.on.fleek.co/
+
 
 
 ## Installation
