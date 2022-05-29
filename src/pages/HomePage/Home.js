@@ -182,6 +182,9 @@ function Home() {
         .airdropAllowed(blockchain.account, hexProofAirDrop)
         .call();
     
+
+        console.log({airDropAllowed});
+        console.log({canMintFree});
       if (canMintFree && airDropAllowed) {
         setProof(hexProofAirDrop);
         setCanMintFree(airDropAllowed);
